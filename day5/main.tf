@@ -11,11 +11,11 @@
 #locking provision for state file 
 resource "aws_dynamodb_table" "dynamodb-terraform-statelock" {
     name = "statelock_dynamodb" #jst give any name 
-    hash_key = "LOCKID"         #jst give any name for hash_key
+    hash_key = "LockID"         #jst give any name for hash_key
     read_capacity = 20          
     write_capacity = 20
 attribute {
-    name = "LOCKID"             #give hash_key
+    name = "LockID"             #give hash_key
     type = "S"                  #type is string
 }
 }
