@@ -20,5 +20,3 @@ resource "aws_s3_bucket" "dependent" {
 
 
 #by giving this first the main one will create and after that the "depends_on" will create
-
-
