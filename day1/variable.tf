@@ -1,7 +1,7 @@
 variable "ami" {
     description = "value"
     type = string 
-    default = "ami-0e53db6fd757e38c7"
+    default = "ami-02b49a24cfb95941c"
 }
 variable "instance_type" {
     description = "value"
